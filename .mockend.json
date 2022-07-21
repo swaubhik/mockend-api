@@ -21,16 +21,15 @@
         "two",
         "three"
       ]
-    },
-    },
-    "createdAt":{
-      "dateTime":{
-        "min":"2022-01-01",
-        "max":"2022-07-21"
-      }
     }
   },
-  "Author":{
+  "createdAt":{
+    "dateTime":{
+      "min":"2022-01-01",
+      "max":"2022-07-21"
+    }
+  },
+  "author":{
     "name":{
       "regexp":"[A-Z][a-z]{5,10}"
     },
