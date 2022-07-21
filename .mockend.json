@@ -1,34 +1,47 @@
 {
-  "Post": {
-    "cover": {
-      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
+  "Post":{
+    "cover":{
+      "regexp":"https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
     },
-    "title": {
-      "loremWords": {
-        "minLength": 5,
-        "maxLength": 20
+    "title":{
+      "loremWords":{
+        "minLength":5,
+        "maxLength":20
       }
     },
-    "body": {
-      "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
+    "body":{
+      "loremParagraphs":{
+        "minLength":10,
+        "maxLength":100
       }
     },
-    "tag": {
-      "string": [
+    "tag":{
+      "string":[
         "one",
         "two",
         "three"
       ]
     },
-    "isDraft": {
-      "boolean": {}
+    "isDraft":{
+      "boolean":{
+        
+      }
     },
-    "createdAt": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
+    "createdAt":{
+      "dateTime":{
+        "min":"2022-01-01",
+        "max":"2022-07-21"
+      }
+    },
+    "author":{
+      "name":{
+        "regexp":"[A-Z][a-z]{5,10}"
+      },
+      "avatar":{
+        "regexp":"https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"
+      },
+      "email":{
+        "regexp":"[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
       }
     }
   }
