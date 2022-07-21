@@ -9,6 +9,12 @@
         "maxLength":20
       }
     },
+    "description":{
+      "loremSentences":{
+        "minLength": 100,
+        "maxLength": 200 
+      }
+    },
     "body":{
       "loremParagraphs":{
         "minLength":500,
@@ -24,8 +30,8 @@
     },
     "createdAt":{
       "dateTime": {
-        "min": "2022-01-01T00:00:00Z",
-        "max": "2022-07-31T00:00:00Z"
+        "min": "2022-01-01",
+        "max": "2022-07-31"
       }
     }
   },
