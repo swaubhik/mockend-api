@@ -22,14 +22,17 @@
         "three"
       ]
     }
-  },
   "createdAt":{
     "date":{
       "min":"2022-01-01",
       "max":"2022-07-21"
+    },
+  "time": {
+      "min": "T00:00:00Z",
+      "max": "T23:59:59Z"
     }
   },
-  "author":{
+  "Author":{
     "name":{
       "regexp":"[A-Z][a-z]{5,10}"
     },
