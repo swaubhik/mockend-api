@@ -1,14 +1,44 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
+  "Post":{
+    "cover":{
+      "regexp":"https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
+    },
+    "title":{
+      "loremWords":{
+        "minLength":5,
+        "maxLength":20
+      }
+    },
+    "body":{
+      "loremParagraphs":{
+        "minLength":10,
+        "maxLength":100
+      }
+    },
+    "tag":{
+      "string":[
+        "one",
+        "two",
+        "three"
+      ]
+    },
+    },
+    "createdAt":{
+      "dateTime":{
+        "min":"2022-01-01",
+        "max":"2022-07-21"
+      }
     }
   },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
+  "Author":{
+    "name":{
+      "regexp":"[A-Z][a-z]{5,10}"
+    },
+    "avatar":{
+      "regexp":"https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"
+    },
+    "email":{
+      "regexp":"[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
     }
   }
 }
