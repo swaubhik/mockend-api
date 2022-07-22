@@ -1,13 +1,13 @@
 {
   "Post":{
-    "author":{
-      "regexp":"[A-Z][a-z]{5,10}"
-    },
     "title":{
       "loremParagraphs":{
         "minLength":50,
         "maxLength":100
       }
+    },
+    "author":{
+      "regexp":"[A-Z][a-z]{5,10}"
     },
     "body":{
       "loremParagraphs":{
