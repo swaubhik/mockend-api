@@ -4,7 +4,10 @@
       "regexp":"[A-Z][a-z]{5,10}"
     },
     "title":{
-      "regexp":"^.*(\\s([a-zA-Z]+\\s)+).*"
+      "loremParagraphs":{
+        "minLength":50,
+        "maxLength":100
+      }
     },
     "body":{
       "loremParagraphs":{
